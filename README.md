@@ -2,6 +2,21 @@
 
 工程案例与技术复盘。这里仅发布架构图、数据流图、技术选型对比、踩坑总结及演示材料，不发布产品源码、构建产物、模型权重、配置密钥或真实用户数据。
 
+Engineering decisions across hardware, data acquisition and AI applications. Architecture, data flows, trade-offs and lessons — without implementation source.
+
+## 案例导航 · Case index
+
+| 案例 | 核心工程问题 | 阅读入口 |
+| --- | --- | --- |
+| InkSeat · 墨席 | 休眠设备、内容版本与可信状态反馈 | [架构 / 数据流 / 选型 / 复盘](inkseat/README.md) |
+| 双路摄像头采集 | 时间基准、标注对应与可恢复归档 | [架构 / 数据流 / 选型 / 复盘](dual-camera-capture/README.md) |
+| Shiyin AI · 拾音 | 流式转写、身份置信度与数据边界 | [架构 / 数据流 / 选型 / 复盘](shiyin-ai-meeting-notes/README.md) |
+| 念 · Nian | 语音记忆与可追溯问询 | [架构](nian/architecture.md) · [选型](nian/trade-offs.md) |
+| 高通量配药控制 | 异步设备控制与流程可视化 | [架构](high-throughput-perovskite/architecture.md) · [选型](high-throughput-perovskite/trade-offs.md) |
+| 固体加料称重调试 | 重量反馈与电机调试 | [架构](powder-testing/architecture.md) · [选型](powder-testing/trade-offs.md) |
+
+新增三个案例依据已公开项目概述整理，图示为通用设计抽象；明确区分项目范围、方案建议和待验证事项。没有公开测试证据时，不宣称性能指标或量产结果。Demo 视频目前尚未提供，各案例说明了计划展示的流程。
+
 ## 念：个人语音记忆助理
 
 探索如何把日常语音整理成可追溯的记忆，并通过问询找回信息。以下内容是经过抽象的工程设计说明，不构成生产可用性或性能保证。示例均为虚构。
